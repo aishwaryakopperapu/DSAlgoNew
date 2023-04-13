@@ -1,5 +1,6 @@
 package ds.algo.pagefactory;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +12,12 @@ public class HomePageFactory {
 
     @FindBy(xpath = "//button[@class='btn']")
     WebElement getStartedBtn;
+    
+    @FindBy(xpath="//a[@href='stack']")
+    WebElement stackBtn;
+    
+    @FindBy(xpath="//a[@href='queue']")
+    WebElement queueBtn;
     
     
     @FindBy(xpath="//a[@href='array']")
@@ -27,6 +34,9 @@ public class HomePageFactory {
     
     @FindBy(xpath="//div[@id='navbarCollapse']/div[2]/ul/a[2]")
     WebElement registerBtn;
+    
+    @FindBy(xpath="//a[@class='navbar-brand']")
+    WebElement brandLogo;
    
     
     public HomePageFactory(WebDriver d) {
@@ -50,12 +60,25 @@ public class HomePageFactory {
 	arrayBtn.click();
     }
     
+    public void clickStackBtn() {
+    	stackBtn.click();
+    	
+    	
+        }  
+    
+    public void clickQueueBtn() {
+    	
+    	queueBtn.click();
+    	
+    }
+    
     
     
     public void clickLinkedListBtn() {
 
 	linkedListBtn.click();
-    }
+	
+  }
     
     
     public void clickTreeBtn() {
@@ -74,5 +97,8 @@ public class HomePageFactory {
 	registerBtn.click();
 	
     }  
+    public void clickbrandLogo(){
+    	brandLogo.click();
     
+}
 }

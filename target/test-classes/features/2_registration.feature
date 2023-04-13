@@ -16,7 +16,7 @@ Feature: User registration
 
     Examples: 
       | username | passwd         | confirmPassword |
-      | numpi91 | numpyninja1234 | numpyninja1234  |
+      | numpi530| numpyninja1234 | numpyninja1234  |
 
   Scenario: check sign out
     Given User click on Sign out link

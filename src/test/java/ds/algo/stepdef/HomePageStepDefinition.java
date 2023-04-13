@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import ds.algo.commmon.BrowserDriverManager;
 import ds.algo.commmon.ConfigFileReader;
@@ -66,6 +67,8 @@ public class HomePageStepDefinition {
     public void user_clicks_get_started_button_on_linked_list_section(){
 	 homePageFactory.clickLinkedListBtn();
 	 driver.navigate().refresh();
+	 JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,750)", "");
     }
 
     @Given("User clicks Get Started button on Tree section")
@@ -91,7 +94,19 @@ public class HomePageStepDefinition {
     logger.info("Registration page displayed successfully");
 	
     }
+    @Given("User clicks Get Started button on Stack section")
+    public void user_clicks_get_started_button_on_stack_section() {
+	  homePageFactory.clickStackBtn();
+	    driver.navigate().refresh();
+ 
+    }
     
+    @Given("User clicks Get Started button on Queue section")
+    public void user_clicks_get_started_button_on_queue_section() {
+	  homePageFactory.clickQueueBtn();
+	    driver.navigate().refresh();
+ 
+    }
    
     }
 

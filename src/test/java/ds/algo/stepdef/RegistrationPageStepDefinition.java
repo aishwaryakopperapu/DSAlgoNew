@@ -1,5 +1,7 @@
 package ds.algo.stepdef;
 
+import java.util.Random;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +18,8 @@ public class RegistrationPageStepDefinition {
     RegistrationPageFactory registerPageFactory = new RegistrationPageFactory(driver);
 
     Logger logger = LogManager.getLogger();
+    
+    Random r = new Random();
 
     @Given("User clicks on Register button")
     public void user_clicks_on_register_button() throws InterruptedException {
@@ -41,15 +45,24 @@ public class RegistrationPageStepDefinition {
     	logger.info("User is on login page");
     	Thread.sleep(1000);
     }
-
-
     @Given("User enters {string} and {string} and {string}")
+	public void user_enters_username_and_password_and_confirmpassword(String username, String password,
+			String confirmationPassword) throws InterruptedException {
+		String rUserName = username + r.nextInt();
+		registerPageFactory.enterUserName(rUserName);
+		logger.info("Random username is: " + rUserName);
+		registerPageFactory.enterPassword(password);
+		registerPageFactory.enterConfrmPasswd(confirmationPassword);
+
+	}
+
+   /* @Given("User enters {string} and {string} and {string}")
     public void user_enters_username_and_password_and_confirmpassword(String username, String password, String confirmationPassword) throws InterruptedException {
 	registerPageFactory.enterUserName(username);
 	registerPageFactory.enterPassword(password);
 	registerPageFactory.enterConfrmPasswd(confirmationPassword);
 	Thread.sleep(1000);
-    }
+    }*/
 
     @Then("user is able to register sucessfully")
     public void user_is_able_to_register_sucessfully() throws InterruptedException {

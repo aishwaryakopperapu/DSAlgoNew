@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>72/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 07 11:33:11 EDT 2023</td>
+<td>Started on:</td><td>Wed Apr 12 18:01:37 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>74 seconds (74149 ms)</td>
+<tr><td>Total time:</td><td>161 seconds (161276 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Graph Representations to text editor with invalid code", "Validate Graph"</td>
+<td><div><pre>org.openqa.selenium.NoAlertPresentException: Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [027b2ebd-938f-4ebf-9dd8-c34706c2e91c, getAlertText {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0, moz:accessibilityChecks: false, moz:buildID: 20230406114409, moz:debuggerAddress: 127.0.0.1:34072, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21636, moz:profile: C:\Users\aishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:34072/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 027b2ebd-938f-4ebf-9dd8-c34706c2e91c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1079)
+	at ds.algo.commmon.AlertHandle.alerthandle(AlertHandle.java:8)
+	at ds.algo.stepdef.GraphPageStepDefinition.user_should_handle_the_alert_presented_with_run_result(GraphPageStepDefinition.java:79)
+	at ✽.User  should handle the alert presented with Run result(file:///C:/Users/aishw/eclipse-workspace/DSAlgoNew/src/test/resources/features/graph.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace605004973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace605004973'><pre>org.openqa.selenium.NoAlertPresentException: Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [027b2ebd-938f-4ebf-9dd8-c34706c2e91c, getAlertText {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 112.0, moz:accessibilityChecks: false, moz:buildID: 20230406114409, moz:debuggerAddress: 127.0.0.1:34072, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21636, moz:profile: C:\Users\aishw\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:34072/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 027b2ebd-938f-4ebf-9dd8-c34706c2e91c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1079)
+	at ds.algo.commmon.AlertHandle.alerthandle(AlertHandle.java:8)
+	at ds.algo.stepdef.GraphPageStepDefinition.user_should_handle_the_alert_presented_with_run_result(GraphPageStepDefinition.java:79)
+	at ✽.User  should handle the alert presented with Run result(file:///C:/Users/aishw/eclipse-workspace/DSAlgoNew/src/test/resources/features/graph.feature:21)
+</pre></div></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,135 +139,365 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to launch the page successfully", "Homepage launch"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Queue section without sign-in", "Homepage launch"</td>
 <td></td>
-<td>14</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Time Complexity page", "DataStructure page"</td>
-<td></td>
-<td>1</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays in python page to run on text editor with invalid python code", "To validate Array"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Applications of Binary trees Page", "Test Tree Page features"</td>
 <td></td>
 <td>3</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Basic Operations in Lists page to run on text editor", "To validate Array"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Applications of Array page to run on text editor", "To validate Array"</td>
 <td></td>
-<td>4</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in with invalid credentials", "User Login"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation page for valid data", "Test the functionalites on Stack data structure page"</td>
 <td></td>
 <td>1</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Register button with empty fields", "User registration"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Applications page for valid data", "Test the functionalites on Stack data structure page"</td>
 <td></td>
-<td>2</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated to Arrays page from home page", "To validate Array"</td>
-<td></td>
-<td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Graph section without sign-in", "Homepage launch"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is navigated to the Queue Data Structure page", "Test the functionalites on Queue Data structure page"</td>
 <td></td>
 <td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Invalid login with data table", "User Login"</td>
-<td></td>
-<td>5</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
 <td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check the get started functionlity on DataStructure section", "DataStructure page"</td>
 <td></td>
 <td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Linked List section without sign-in", "Homepage launch"</td>
-<td></td>
-<td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign In with valid credentials", "User Login"</td>
-<td></td>
-<td>2</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Tree section without sign-in", "Homepage launch"</td>
-<td></td>
-<td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Time Complexity page", "DataStructure page"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation using array page for valid data", "Test the functionalites on Queue Data structure page"</td>
 <td></td>
 <td>1</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays in python page to run on text editor", "To validate Array"</td>
-<td></td>
-<td>2</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Applications of Array page to run on text editor", "To validate Array"</td>
-<td></td>
-<td>4</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Register page", "Homepage launch"</td>
-<td></td>
-<td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Basic Operations in Lists page to run on text editor", "To validate Array"</td>
-<td></td>
-<td>2</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
-<tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Applications of Array page to run on text editor", "To validate Array"</td>
-<td></td>
-<td>3</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
 <td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in with invalid credentials", "User Login"</td>
 <td></td>
 <td>1</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays using list page to run on text editor", "To validate Array"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Implementation in Python Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Applications of Array page to run on text editor", "To validate Array"</td>
 <td></td>
 <td>4</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Login functionality on the register page", "User registration"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Invalid login with data table", "User Login"</td>
 <td></td>
-<td>2</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>4</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
 <td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check sign out", "User registration"</td>
 <td></td>
 <td>0</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
-<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register successfully with valid data", "User registration"</td>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Traversal to text editor", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation of Queue in Python page for valid data", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation using collections.deque page for valid data", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation using array page for invalid data", "Test the functionalites on Queue Data structure page"</td>
 <td></td>
 <td>3</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Implementation Of BST Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Implement Linked List in python to text editor", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated to Arrays page from home page", "To validate Array"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays in python page to run on text editor with invalid python code", "To validate Array"</td>
+<td></td>
+<td>4</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Implementation of Binary Trees Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Operations in Stack page for valid data", "Test the functionalites on Stack data structure page"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Types of Binary Trees Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation of Queue in Python page for invalid data", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Binary Trees Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates from home page to linkedlist page", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Deletion to text editor page", "Validate Linkedlist"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate to Graph page from home page", "Validate Graph"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Overview of Trees Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
 <td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor with invalid data", "DataStructure page"</td>
 <td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation page for invalid data", "Test the functionalites on Stack data structure page"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Traversals-Illustration Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in with invalid credentials", "User Login"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Tree section without sign-in", "Homepage launch"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Register page", "Homepage launch"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Types of linked List to text editor page", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Terminologies Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates from Create linked list to text editor page", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Basic Operations in Lists page to run on text editor", "To validate Array"</td>
+<td></td>
 <td>4</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Stack section without sign-in", "Homepage launch"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Applications page for invalid data", "Test the functionalites on Stack data structure page"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Binary Tree Traversals Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Implementation using collections.deque page for invalid data", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to run invalid code in tryEditor with error message", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register successfully with valid data", "User registration"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign In with valid credentials", "User Login"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Time Complexity page", "DataStructure page"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigates from linked list page to text editor page", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is navigated to the Stack Data Structure page", "Test the functionalites on Stack data structure page"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Types of Trees Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to navigate to home page using logo click", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to launch the Tree HomePage successfully when logged in", "Test Tree Page features"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to launch the page successfully", "Homepage launch"</td>
+<td></td>
+<td>6</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Operations in Stack page for invalid data", "Test the functionalites on Stack data structure page"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Register button with empty fields", "User registration"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Queue Operations page for valid data", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Binary Search TreesPage", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Invalid login with excelsheet data", "User Login"</td>
+<td></td>
+<td>4</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Graph section without sign-in", "Homepage launch"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays in python page to run on text editor", "To validate Array"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Time Complexity page", "DataStructure page"</td>
+<td></td>
+<td>1</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays using list page to run on text editor", "To validate Array"</td>
+<td></td>
+<td>4</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the functionality of Queue Operations page for invalid data", "Test the functionalites on Queue Data structure page"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User gets error when click on Linked List section without sign-in", "Homepage launch"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from Basic Operations in Lists page to run on text editor", "To validate Array"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Insertion to text editor", "Validate Linkedlist"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Tree Traversals Page", "Test Tree Page features"</td>
+<td></td>
+<td>3</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check Login functionality on the register page", "User registration"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Graph Representations to text editor", "Validate Graph"</td>
+<td></td>
+<td>2</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 <tr>
 <td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is navigated from arrays using list page to run on text editor", "To validate Array"</td>
 <td></td>
 <td>2</td>
-<td>ds.algo.testrunner.DSAlgoTestRunner@2925bf5b</td></tr>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
+<tr>
+<td title='ds.algo.testrunner.DSAlgoTestRunner.runScenario()'><b>runScenario</b><br>Test class: ds.algo.testrunner.DSAlgoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User navigate from Graph page to text editor", "Validate Graph"</td>
+<td></td>
+<td>0</td>
+<td>ds.algo.testrunner.DSAlgoTestRunner@24959ca4</td></tr>
 </table><p>
 </body>
 </html>

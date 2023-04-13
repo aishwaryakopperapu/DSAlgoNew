@@ -6,8 +6,8 @@
       <class name="ds.algo.testrunner.DSAlgoTestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="18"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="71"/>
         </methods>
       </class> <!-- ds.algo.testrunner.DSAlgoTestRunner -->
     </classes>

@@ -67,3 +67,4 @@ Feature: To validate Array
     And User clicks on try here link
     Then User is navigated to text editor page
     Then User clicks on run button
+    And User navigates to home page

@@ -19,6 +19,10 @@ Feature: User Login
    |username44|password44|
     Then Invalid credentials message is displayed
   
+   Scenario: Check Invalid login with excelsheet data
+    Given User enter the username and password from excel sheet
+    Then Invalid credentials message is displayed
+  
   Scenario Outline: Sign In with valid credentials
     Given User enter "<uname>" and "<pass>"
     And User click on login button

@@ -1,5 +1,6 @@
 package ds.algo.stepdef;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -13,12 +14,15 @@ import ds.algo.pagefactory.LoginPageFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import ds.algo.commmon.ExcelSheetReader;
 
 public class LoginPageStepDefinition {
 
 	WebDriver driver = BrowserDriverManager.driverFactory();
 
 	LoginPageFactory loginPageFactory = new LoginPageFactory(driver);
+	
+	ExcelSheetReader excelSheetReader = new ExcelSheetReader();
 
 	Logger logger = LogManager.getLogger();
 
@@ -83,6 +87,30 @@ public void invalid_credentials_message_is_displayed() {
 	@Then("User is not logged in")
 	public void user_is_not_logged_in() {
 		logger.error("User is not logged in");
+	}
+	
+	@Given("User enter the username and password from excel sheet")
+	public void user_enter_the_username_and_password_from_excel_sheet() throws IOException, InterruptedException {
+		List<List<String>> excelList = excelSheetReader.readExcelData();
+		
+		for (List<String> elist : excelList) {
+			
+			String user1 = elist.get(0);
+			System.out.println("This is username: "+user1);
+			loginPageFactory.enterUser(user1);
+
+			String pass1 = elist.get(1);
+			System.out.println("This is password: " +pass1);
+			loginPageFactory.enterPass(pass1);
+			
+			Thread.sleep(1000);
+			
+			loginPageFactory.loginClick();
+
+			
+		}
+		
+		
 	}
 
 }

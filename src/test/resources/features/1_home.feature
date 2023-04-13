@@ -10,6 +10,14 @@ Feature: Homepage launch
   Scenario: User gets error when click on Linked List section without sign-in
     Given User clicks Get Started button on Linked List section
     Then Error message is displayed
+    
+    Scenario: User gets error when click on Stack section without sign-in
+    Given User clicks Get Started button on Stack section
+    Then Error message is displayed
+    
+  Scenario: User gets error when click on Queue section without sign-in
+    Given User clicks Get Started button on Queue section
+    Then Error message is displayed
 
   Scenario: User gets error when click on Tree section without sign-in
     Given User clicks Get Started button on Tree section

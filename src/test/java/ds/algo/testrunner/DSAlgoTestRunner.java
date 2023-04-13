@@ -7,9 +7,11 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources\\features", glue = {"ds.algo.stepdef"}, monochrome = true, plugin = {
-	"pretty", "html:target/report/dsAlgoCucumber-report.html" })
+@CucumberOptions(features = "src\\test\\resources\\features",
+glue = {"ds.algo.stepdef"}, monochrome = true,
+plugin = {"pretty","html:target/report/dsAlgoCucumber-report.html",
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" })
 
 public class DSAlgoTestRunner extends AbstractTestNGCucumberTests {
-
+//"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 }
