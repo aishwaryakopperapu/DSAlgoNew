@@ -68,7 +68,8 @@ public class RegistrationPageStepDefinition {
     public void user_is_able_to_register_sucessfully() throws InterruptedException {
 	String actualURL = driver.getCurrentUrl();
 	//String expectedURL = "https://dsportalapp.herokuapp.com";
-	String expectedURL = "https://dsportalapp.herokuapp.com/home";
+	//String expectedURL = "https://dsportalapp.herokuapp.com/home";
+	String expectedURL = "https://dsportalapp.herokuapp.com/homes";
 	Assert.assertEquals(actualURL, expectedURL);
 	logger.info("User registered successfully");
 	Thread.sleep(1000);
